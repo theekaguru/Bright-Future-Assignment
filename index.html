@@ -1,60 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Future Assignment</title>
+    <style>
+        body{
+            font-family: Inter-Bold;
+            margin:0;
+            padding: 0;
+            background-color: #fefcfb;
+        }
+        .navbar{
+            display: flex;
+            justify-content:
+            space-between;
+            align-items: center; 
+            padding: 2rem;
+            background-color: #fff;
+            font-weight: bold;
+        }
+        .nav-links a{
+            margin: 0 1 rem;
+            text-decoration: none;
+      color: #000;
+    }
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
+    .main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      padding: 2rem;
+    }
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    .main-left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-content {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-description {
+      flex: 1;
+    }
+
+    .hero-description button {
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #f15d51;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .sidebar {
+      background-color: #00001a;
+      color: #fff;
+      padding: 1.5rem;
+    }
+
+    .sidebar h2 {
+      color: orange;
+    }
+
+    .sidebar article {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #555;
+      padding-bottom: 1rem;
+    }
+
+    .highlights {
+      display: flex;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .highlight {
+      display: flex;
+      gap: 1rem;
+      max-width: 300px;
+    }
+
+    .highlight img {
+      width: 100px;
+      height: auto;
+    }
+
+    .highlight-content h3 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .highlight-content p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .highlight-number {
+      color: #c5c6ce;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+
+
+    </style>
 </head>
 <body>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+  <header class="navbar">
+    <div class="logo">W.</div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">New</a>
+      <a href="#">Popular</a>
+      <a href="#">Trending</a>
+      <a href="#">Categories</a>
+    </nav>
+  </header>
 
-  The Bright Future of Web 3.0?
+  <main class="main">
+    <section class="main-left">
+      <img src="mypics/web 3.jpg" alt="Colorful abstract blocks" class="hero-img" />
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>The Bright Future of Web 3.0?</h1>
+        </div>
+        <div class="hero-description">
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+          <button>READ MORE</button>
+        </div>
+      </div>
+    </section>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+    <aside class="sidebar">
+      <h2>New</h2>
+      <article>
+        <h3>Hydrogen VS Electric Cars</h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </article>
+      <article>
+        <h3>The Downsides of AI Artistry</h3>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </article>
+      <article>
+        <h3>Is VC Funding Drying Up?</h3>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </article>
+    </aside>
+  </main>
 
-  Read more
+  <section class="highlights">
+    <div class="highlight">
+      <img src="mypics/pcs.jpg" alt="Retro PC" />
+      <div class="highlight-content">
+        <div class="highlight-number">01</div>
+        <h3>Reviving Retro PCs</h3>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
 
-  New 
+    <div class="highlight">
+      <img src="mypics/laptops.jpg" alt="Laptop" />
+      <div class="highlight-content">
+        <div class="highlight-number">02</div>
+        <h3>Top 10 Laptops of 2022</h3>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+    <div class="highlight">
+      <img src="mypics/gaming.jpg" alt="Gaming" />
+      <div class="highlight-content">
+        <div class="highlight-number">03</div>
+        <h3>The Growth of Gaming</h3>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </section>
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+</html>
 </html>
